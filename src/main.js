@@ -31,55 +31,20 @@ export default class App {
 
     esPrimo(numero) {
 
-        do{
+        let i = 2;
 
-            
-            /*if(numero % 2 === 0) {
-                return true 
-            } else if (numero % 3 == 0) {
-                return true;
-            } else if (numero % 5 == 0) {
-                return true;
-            } else if (numero % 7 == 0) {
-                return true;
-            } else if (numero % 11 == 0) {
-                return true;
-            } else if (numero % 13 == 0) {
-                return true;
-            } else if (numero % 17 == 0) {
-                return true;
-            } else if (numero % 19 == 0) {
-                return true;
-            } else if (numero % 23 == 0) {
-                return true;
-            } else if (numero % 29 == 0) {
-                return true;
-            } else if (numero % 31 == 0) {
-                return true;
-            } else if (numero % 37 == 0) {
-                return true;
-            } else if (numero % 41 == 0) {
-                return true;
-            } else if (numero % 43 == 0) {
-                return true;
-            } else if (numero % 47 == 0) {
-                return true;
-            } else if (numero % 53 == 0) {
-                return true;
-            } else if (numero % 59 == 0) {
-                return true;
-            } else if (numero % 61 == 0) {
-                return true;
-            } else if (numero % 67 == 0) {
-                return true;
-            } else if (numero % 71 == 0) {
-                return true;
-            } else if (numero % 73 == 0) {
-                return true;
+        do {
+
+            if(numero % i == 0) {
+                return false;
             } else {
-                return false
-            }*/
-        } while(numero);
+                return true;
+            }
+
+            i++;
+
+        } while (i < numero);
+    
     }
 
     obtenerMultiplos(inicio, fin) {
@@ -142,6 +107,7 @@ console.log(app.sumatoriaSerieDos(2));
 console.log("Implemented esPrimo");
 console.log(app.esPrimo(3));
 console.log(app.esPrimo(20));
+console.log(app.esPrimo(67));
 console.log("Implemented obtenerMultiplos");
 console.log(app.obtenerMultiplos(10, 25));
 console.log(app.obtenerMultiplos(25, 10));
