@@ -12,8 +12,8 @@ export default class App {
     }
  
     sumatoriaSerieDos(numero) {
-        let i = 1
-        let suma = 0
+        let i = 1;
+        let suma = 0;
 
         while(i <= numero) {
 
@@ -21,13 +21,16 @@ export default class App {
                 suma = suma + 1/i;
             } else {
                 suma = suma - 1/i;
-            }
+            } 
+
+            i++
         }
 
-        return suma
+        return suma;
     }
 
     esPrimo(numero) {
+
         do{
             if(numero % 1 == 1) {
                 return true 
@@ -36,7 +39,7 @@ export default class App {
             } else if (numero == 2) {
                 return false
             }
-        } while()
+        } while(not)
     }
 
     obtenerMultiplos(inicio, fin) {
@@ -53,7 +56,7 @@ let app = new App();
 console.log("Implemented sumatoriaSerieUno");
 console.log(app.sumatoriaSerieUno(7));
 console.log("Implemented sumatoriaSerieDos");
-console.log(app.sumatoriaSerieDos());
+console.log(app.sumatoriaSerieDos(2));
 console.log("Implemented esPrimo");
 console.log(app.esPrimo());
 console.log("Implemented obtenerMultiplos");
