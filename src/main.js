@@ -17,7 +17,7 @@ export default class App {
 
         while(i <= numero) {
 
-            if(i % 2 == 0){
+            if((i % 2 == 0)||(i == 1)){
                 suma = suma + 1/i;
             } else {
                 suma = suma - 1/i;
